@@ -47,6 +47,9 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        "status-read": "hsl(var(--status-read))",
+        "status-reading": "hsl(var(--status-reading))",
+        "status-want": "hsl(var(--status-want))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
