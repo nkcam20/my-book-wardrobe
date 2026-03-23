@@ -10,7 +10,8 @@ export interface Book {
 }
 
 const STORAGE_KEY = "nanda-kumar-library-books";
-
+const VERSION_KEY = "nanda-kumar-library-version";
+const CURRENT_VERSION = "2";
 const DEFAULT_BOOKS: Book[] = [
   { id: "b1", title: "To Kill a Mockingbird", author: "Harper Lee", genre: "Fiction", status: "Read", cover: "https://covers.openlibrary.org/b/isbn/9780061120084-M.jpg" },
   { id: "b2", title: "1984", author: "George Orwell", genre: "Dystopian", status: "Read", cover: "https://covers.openlibrary.org/b/isbn/9780451524935-M.jpg" },
