@@ -27,6 +27,12 @@ const DEFAULT_BOOKS: Book[] = [
 
 export function getBooks(): Book[] {
   try {
+    const ver = localStorage.getItem(VERSION_KEY);
+    if (ver !== CURRENT_VERSION) {
+      localStorage.setItem(VERSION_KEY, CURRENT_VERSION);
+      saveBooks(DEFAULT_BOOKS);
+      return DEFAULT_BOOKS;
+    }
     const data = localStorage.getItem(STORAGE_KEY);
     if (data) return JSON.parse(data);
     saveBooks(DEFAULT_BOOKS);
