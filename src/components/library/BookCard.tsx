@@ -17,8 +17,12 @@ export function BookCard({ book, onEdit, onDelete }: BookCardProps) {
 
   return (
     <div className="bg-card rounded-lg shadow-sm hover:shadow-md transition-shadow p-5 flex flex-col gap-3">
-      <div className="w-full h-32 bg-muted rounded-md flex items-center justify-center">
-        <BookOpen className="w-12 h-12 text-muted-foreground/40" />
+      <div className="w-full h-40 bg-muted rounded-md flex items-center justify-center overflow-hidden">
+        {book.cover ? (
+          <img src={book.cover} alt={book.title} className="w-full h-full object-cover" />
+        ) : (
+          <BookOpen className="w-12 h-12 text-muted-foreground/40" />
+        )}
       </div>
       <div className="flex-1">
         <h3 className="font-semibold text-card-foreground truncate">{book.title}</h3>
