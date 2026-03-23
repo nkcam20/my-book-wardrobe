@@ -44,7 +44,7 @@ export default function Index() {
     <div className="min-h-screen bg-background">
       <header className="bg-card shadow-sm sticky top-0 z-10">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-          <h1 className="text-xl md:text-2xl font-bold text-foreground">📚 NANDA KUMAR Library Book Tracker</h1>
+          <h1 className="text-xl md:text-2xl font-bold text-foreground">📚 nkcam20 Library Book Tracker</h1>
           <button onClick={() => { setEditingBook(null); setShowForm(true); }} className="flex items-center gap-1.5 bg-primary text-primary-foreground px-4 py-2 rounded-md font-medium hover:opacity-90 transition-opacity text-sm">
             <Plus className="w-4 h-4" /> Add Book
           </button>
