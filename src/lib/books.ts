@@ -6,21 +6,22 @@ export interface Book {
   author: string;
   genre: string;
   status: BookStatus;
+  cover?: string;
 }
 
 const STORAGE_KEY = "nanda-kumar-library-books";
 
 const DEFAULT_BOOKS: Book[] = [
-  { id: "b1", title: "To Kill a Mockingbird", author: "Harper Lee", genre: "Fiction", status: "Read" },
-  { id: "b2", title: "1984", author: "George Orwell", genre: "Dystopian", status: "Read" },
-  { id: "b3", title: "The Great Gatsby", author: "F. Scott Fitzgerald", genre: "Classic", status: "Read" },
-  { id: "b4", title: "Sapiens", author: "Yuval Noah Harari", genre: "Non-Fiction", status: "Reading" },
-  { id: "b5", title: "Atomic Habits", author: "James Clear", genre: "Self-Help", status: "Reading" },
-  { id: "b6", title: "The Alchemist", author: "Paulo Coelho", genre: "Fiction", status: "Read" },
-  { id: "b7", title: "Dune", author: "Frank Herbert", genre: "Sci-Fi", status: "Want to Read" },
-  { id: "b8", title: "Educated", author: "Tara Westover", genre: "Memoir", status: "Want to Read" },
-  { id: "b9", title: "The Psychology of Money", author: "Morgan Housel", genre: "Finance", status: "Reading" },
-  { id: "b10", title: "Project Hail Mary", author: "Andy Weir", genre: "Sci-Fi", status: "Want to Read" },
+  { id: "b1", title: "To Kill a Mockingbird", author: "Harper Lee", genre: "Fiction", status: "Read", cover: "https://covers.openlibrary.org/b/isbn/9780061120084-M.jpg" },
+  { id: "b2", title: "1984", author: "George Orwell", genre: "Dystopian", status: "Read", cover: "https://covers.openlibrary.org/b/isbn/9780451524935-M.jpg" },
+  { id: "b3", title: "The Great Gatsby", author: "F. Scott Fitzgerald", genre: "Classic", status: "Read", cover: "https://covers.openlibrary.org/b/isbn/9780743273565-M.jpg" },
+  { id: "b4", title: "Sapiens", author: "Yuval Noah Harari", genre: "Non-Fiction", status: "Reading", cover: "https://covers.openlibrary.org/b/isbn/9780062316097-M.jpg" },
+  { id: "b5", title: "Atomic Habits", author: "James Clear", genre: "Self-Help", status: "Reading", cover: "https://covers.openlibrary.org/b/isbn/9780735211292-M.jpg" },
+  { id: "b6", title: "The Alchemist", author: "Paulo Coelho", genre: "Fiction", status: "Read", cover: "https://covers.openlibrary.org/b/isbn/9780062315007-M.jpg" },
+  { id: "b7", title: "Dune", author: "Frank Herbert", genre: "Sci-Fi", status: "Want to Read", cover: "https://covers.openlibrary.org/b/isbn/9780441172719-M.jpg" },
+  { id: "b8", title: "Educated", author: "Tara Westover", genre: "Memoir", status: "Want to Read", cover: "https://covers.openlibrary.org/b/isbn/9780399590504-M.jpg" },
+  { id: "b9", title: "The Psychology of Money", author: "Morgan Housel", genre: "Finance", status: "Reading", cover: "https://covers.openlibrary.org/b/isbn/9780857197689-M.jpg" },
+  { id: "b10", title: "Project Hail Mary", author: "Andy Weir", genre: "Sci-Fi", status: "Want to Read", cover: "https://covers.openlibrary.org/b/isbn/9780593135204-M.jpg" },
 ];
 
 export function getBooks(): Book[] {
